@@ -309,10 +309,10 @@ window.onload = function () {
   let imgx = 0;
   function timeass(){
     var timer = setTimeout(function(){
-      document.querySelector('#imgz').style.marginTop = (imgy+=10)+"px";
+      document.querySelector('#imgz').style.marginTop = (imgy+=3)+"px";
       clearInterval(timer);
       timer = null;
-      if(imgx<200){}
+      if(imgx<2000){}
         timeass();
       imgx++;
     },50);
