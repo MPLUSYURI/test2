@@ -1,0 +1,588 @@
+@img-p1: "../images/p1/";
+@img-p2: "../images/p2/";
+@img-p3: "../images/p3/";
+@img-p4: "../images/p4/";
+@img-p5: "../images/p5/";
+@img-p6: "../images/p6/";
+@img-p7: "../images/p7/";
+.none {display:none;}
+.block {display:block;}
+//p1
+.loading {
+  overflow:hidden;
+  background-image: url('@{img-p1}bg.png');
+  .load {
+    //background: url('@{img-p1}loading.gif');
+    width:60%;
+    height:360px;
+    margin:10% 20%;
+  }
+  .loadNum {
+    position:relative;
+    display:block;
+    width:100%;
+    top:-50px;
+    height:50px;
+    .num {
+      display:block;
+      width:50px;
+      height:60px;
+      margin: 0 auto;
+    }
+    //设置倒计时的css
+    .num0 {background:url("@{img-p1}nr.png") 0px 0px;}
+    .num9 {background:url("@{img-p1}nr.png") 50px 0px;}
+    .num8 {background:url("@{img-p1}nr.png") 100px 0px;}
+    .num7 {background:url("@{img-p1}nr.png") 145px 0px;}
+    .num6 {background:url("@{img-p1}nr.png") 191px 0px;}
+    .num5 {background:url("@{img-p1}nr.png") 240px 0px;}
+    .num4 {background:url("@{img-p1}nr.png") 290px 0px;}
+    .num3 {background:url("@{img-p1}nr.png") 338px 0px;}
+    .num2 {background:url("@{img-p1}nr.png") 390px 0px;}
+    .num1 {background:url("@{img-p1}nr.png") 431px 0px;}
+  }
+}
+//p2
+.sec1 {
+  .loading;
+  position:relative;
+  .top {
+    width:80%;
+    height:500px;
+    margin: 0 10%;
+    background:url('@{img-p2}calendar.png') no-repeat;
+    background-size: 100% auto;
+    position:relative;
+    .accompany {
+      width:100%;
+      height:30px;
+      background:url('@{img-p2}red.png') no-repeat;
+      background-size: 100% auto;
+      position: absolute;
+      bottom: 30%;
+    }
+    .test {
+      width:100%;
+      height:150px;
+      background:url('@{img-p2}blue.png') no-repeat;
+      background-size: 100% auto;
+      position: absolute;
+      bottom:0;
+    }
+  }
+  .btnBox {
+    position: absolute;
+    width:100%;
+    height:50px;
+    bottom:0;
+    .btn_sec1 {
+      display:block;
+      //border: none;
+      width:80%;
+      height:100px;
+      margin: 0 auto;
+      background:url('@{img-p2}btn-calc.png') no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+//p3
+.sec2 {
+  .loading;
+  .top {
+    width:70%;
+    height:500px;
+    margin: 5% 15%;
+    background:url('@{img-p3}calculator.png') no-repeat;
+    background-size: 100% auto;
+    position:relative;
+    .text {
+      width:100%;
+      height:50px;
+      position: absolute;
+      background:url('@{img-p3}red.png') no-repeat;
+      background-size: 100% auto;
+      bottom:160px;
+    }
+    .ipt {
+      width:100%;
+      height:150px;
+      position: absolute;
+      background:url('@{img-p3}blue.png') no-repeat;
+      background-size: 100% auto;
+      bottom:0;
+      .num {
+        display:block;
+        width:100px;
+        height:20px;
+        padding-top:22px;
+        padding-left:55%;
+        .iptNum {
+          width:60px;
+          outline: none;
+          border:none;
+          border-radius:5px;
+          background-color:transparent;
+          font-size:20px;
+          font-weight: bold;
+        }
+      }
+      .day {
+        display:block;
+        width:100px;
+        height:20px;
+        padding-top:15px;
+        padding-left:60%;
+        .iptDay {
+          width:60px;
+          outline: none;
+          border:none;
+          border-radius:5px;
+          background-color:transparent;
+          font-size:20px;
+          font-weight: bold;
+        }
+      }
+
+      //placeholder
+    }
+  }
+  .btnBox {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    .btn_sec2 {
+      display: block;
+      //border: none;
+      width: 80%;
+      height: 100px;
+      margin: 0 auto;
+      background: url('@{img-p3}btn-calc.png') no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+//p4
+.sec3 {
+  .loading;
+  .top {
+    width:60%;
+    margin:20%;
+    height:50px;
+    background:url('@{img-p4}red.png') no-repeat;
+    background-size: 100% auto;
+    position:relative;
+  }
+  .conter {
+    width: 70%;
+    margin: 0 15%;
+    height:300px;
+    background:url('@{img-p4}blue.png') no-repeat;
+    background-size: 100% auto;
+    position:relative;
+    .con_top {
+      width:100%;
+      height:160px;
+      span {
+        width:100px;
+        height:32px;
+        display:block;
+        font-size:20px;
+        margin: 0 auto;
+        text-align: right;
+      }
+    }
+    .bottom {
+      width:100%;
+      height:100px;
+      margin-top:5%;
+      .day {
+        width:100px;
+        height:100px;
+        margin:0 auto;
+        line-height:100px;
+        font-size:50px;
+        text-align: center;
+        color:#ff0000;
+        font-family: '微软雅黑';
+      }
+      .blue {
+        color:skyblue;
+      }
+      span {
+        display:block;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left:200px;
+        top:-50px;
+        background:url('@{img-p4}tian.png') no-repeat;
+        background-size: 100% auto;
+        z-index:20;
+      }
+      .in_span {
+        background:url('@{img-p4}tian-blue.png') no-repeat;
+        background-size: 100% auto;
+      }
+    }
+  }
+  .butn {
+    width:90%;
+    height:50px;
+    position: absolute;
+    bottom:0px;
+    margin: 5px 5%;
+    .exc {
+      display:inline-block;
+      width:40%;
+      height:50px;
+      background:url('@{img-p4}btn-back.png') no-repeat;
+      background-size: 65% auto;
+    }
+    .dist {
+      display:inline-block;
+      width:50%;
+      height:50px;
+      background:url('@{img-p4}btn-go.png') no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+//p5
+.sec4 {
+  .loading;
+  .top{
+    width:40%;
+    margin:5% 30%;
+    height: 200px;
+    background: url('@{img-p1}loading.gif') no-repeat;
+    background-size: 100% auto;
+  }
+  .centent{
+    width:70%;
+    margin:0% 15%;
+    height: 260px;
+    background: url('@{img-p5}word.png') no-repeat;
+    background-size: 100% auto;
+  }
+  .bottom {
+    width:90%;
+    height:50px;
+    position: absolute;
+    bottom:0px;
+    margin: 5px 5%;
+    .exc2 {
+      display:inline-block;
+      width:40%;
+      height:50px;
+      background:url('@{img-p5}btn-back.png') no-repeat;
+      background-size: 65% auto;
+    }
+    .dist2 {
+      display:inline-block;
+      width:50%;
+      height:50px;
+      background:url('@{img-p5}btn-go.png') no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}
+//p6--------------------------------------------------
+.op {
+  .loading;
+  .top{
+    height:55%;
+    width:100%;
+    .heads {
+      width:90%;
+      height:80px;
+      background: url('@{img-p6}blue.png') no-repeat;
+      background-size: 100% auto;
+      margin: 5%;
+      margin-bottom:0;
+    }
+    .buttons1 {
+      padding-left:2px;
+      margin-bottom:20px;
+      .title {
+        width:100px;
+        height:20px;
+        background: url('@{img-p6}body-title.png') no-repeat;
+        background-size: 100% auto;
+      }
+      span {
+        display:inline-block;
+        width:32%;
+        height:100px;
+      }
+      #btn1{
+        width:20%;
+        margin: 0 6%;
+        background: url('@{img-p6}body1.png') no-repeat;
+        background-size: 100% auto;
+      }
+      #btn2{
+        width:20%;
+        margin: 0 6%;
+        background: url('@{img-p6}body2.png') no-repeat;
+        background-size: 100% auto;
+      }
+      #btn3{
+        width:20%;
+        margin: 0 6%;
+        background: url('@{img-p6}body3.png') no-repeat;
+        background-size: 100% auto;
+      }
+    }
+    .buttons2 {
+      padding-left:2px;
+      margin-bottom:20px;
+      .title {
+        width:100px;
+        height:20px;
+        background: url('@{img-p6}hair-title.png') no-repeat;
+        background-size: 100% auto;
+      }
+      span {
+        display:inline-block;
+        width:32%;
+        height:100px;
+      }
+      #btn4{
+        width:20%;
+        margin: 0 6%;
+        background: url('@{img-p6}hair1.png') no-repeat;
+        background-size: 100% auto;
+      }
+      #btn5{
+        width:20%;
+        margin: 0 6%;
+        background: url('@{img-p6}hair2.png') no-repeat;
+        background-size: 100% auto;
+      }
+      #btn6{
+        width:20%;
+        margin: 0 6%;
+        background: url('@{img-p6}hair3.png') no-repeat;
+        background-size: 100% auto;
+      }
+    }
+  }
+  .bto{
+    height:45%;
+    width:100%;
+    background: url('@{img-p6}bg.png') no-repeat;
+    background-size: 100% auto;
+    border: 1px solid transparent;
+    .imgs {
+      width:60%;
+      height:150px;
+      margin: 20px 20%;
+      margin-bottom:0px;
+      background:url('@{img-p6}11.png') no-repeat;
+      background-size: 100% auto;
+      .left_i{
+        position:relative;
+        top:-13px;
+        left:-13px;
+        display:block;
+        width:50px;
+        height:50px;
+        background:url('@{img-p6}left.png') no-repeat;
+        background-size: 100% auto;
+      }
+      .right_i{
+        display:block;
+        width:50px;
+        height:50px;
+        background:url('@{img-p6}left.png') no-repeat;
+        background-size: 100% auto;
+        float:right;
+        margin-right:-13px;
+        margin-top:63px;
+      }
+    }
+    .etc {
+      width:80%;
+      height:80px;
+      margin:0 10%;
+      background: url('@{img-p6}btn-go.png') no-repeat;
+      background-size: 100% auto;
+      position:absolute;
+      bottom:0px;
+    }
+  }
+}
+#sele {
+  display:block;
+  width:100%;
+  height:100%;
+  background: url('@{img-p6}select.png') no-repeat;
+  background-size: 100% auto;
+}
+#sele2 {
+  display:block;
+  width:100%;
+  height:100%;
+  background: url('@{img-p6}select.png') no-repeat;
+  background-size: 100% auto;
+}
+//p7
+.show {
+  .loading;
+  .top {
+    width:100%;
+    height:60px;
+    background: url('@{img-p7}nav.png') no-repeat;
+    background-size: 100% auto;
+    span{
+      display:inline-block;
+      margin: 5px 0 0 5px;
+    }
+    .nav{
+      width:50px;
+      height:50px;
+      //background: url('@{img-p7}menu.png') no-repeat;
+      //background-size: 60% auto;
+      //-webkit-animation:tras1 1s linear;
+
+    }
+    .text{
+      width:200px;
+      height:50px;
+      //background: url('@{img-p7}title.png') no-repeat;
+      //background-size: 100% auto;
+      //-webkit-animation:tras2 1s linear;
+    }
+    .sou{
+      width:50px;
+      height:50px;
+      //background: url('@{img-p7}search.png') no-repeat;
+      //background-size: 60% auto;
+      float:right;
+      //-webkit-animation:tras3 1s linear;
+    }
+    .copy{
+      width:50px;
+      height:50px;
+      //background: url('@{img-p7}refresh.png') no-repeat;
+      //background-size: 60% auto;
+      float:right;
+      //-webkit-animation:tras4 1s linear;
+      i{
+        display:inline-block;
+        width:30px;
+        height:30px;
+        //background: url('@{img-p7}refresh.png') no-repeat;
+        //background-size: 100% auto;
+        //-webkit-animation:tras5 10s linear infinite;
+      }
+    }
+  }
+  .centent{
+  	width:80%;
+  	height:60px;
+  	margin: 0 10%;
+  	background: url('@{img-p7}text1.png') no-repeat;
+    background-size: 100% auto;
+  }
+  .imgs{
+  	width:80%;
+  	height:400px;
+  	margin: 0 10%;
+  	background: url('@{img-p7}11.png') no-repeat;
+    background-size: 100% auto;
+    transform:rotate(8deg);
+    overflow:hidden;
+    border:1px solid transparent;
+    p{
+      width:100%;
+      height:100%;
+      background:url('@{img-p1}bg.png') no-repeat;
+      background-size: 100% auto;
+    }
+  }
+  .bottom {
+    width:90%;
+    height:50px;
+    position: absolute;
+    bottom:0px;
+    margin: 5px 5%;
+    .exc3 {
+      display:inline-block;
+      width:40%;
+      height:50px;
+
+    }
+    .dist3 {
+      display:inline-block;
+      width:50%;
+      height:50px;
+
+    }
+  }
+}
+.p8{
+  width:100%;
+  height:100%;
+  background:#000;
+  opacity: 0.6;
+  position: fixed;
+  top:0;
+  left:.0;
+  div{
+    height:100px;
+    font-size:40px;
+    color:#fff;
+  }
+}
+@keyframes tras1 {
+  0% {
+    transform:scale(0);
+  }
+  80% {
+    transform:scale(1.1);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@keyframes tras2 {
+  0% {
+    transform:scale(0);
+  }
+  80% {
+    transform:scale(1.1);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@keyframes tras3 {
+  0% {
+    transform:scale(0);
+  }
+  80% {
+    transform:scale(1.1);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@keyframes tras4 {
+  0% {
+    transform:scale(0);
+  }
+  80% {
+    transform:scale(1.1);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@keyframes tras5 {
+  100% {
+    transform:rotate(1080deg);
+  }
+}
