@@ -125,7 +125,20 @@
   <section class="p8" style='background:#ddd;'>
     <div> </div>
     <div id="reset"></div>
-    <div style="font-size:16px;">请您等待加载，大概9秒</div>
+    <div style="font-size:16px;" id='tm'></div>
   </section>
 </body>
+  <script>
+  var i = 15;
+  function tim() {
+    var timer = setTimeout(function(){
+      i--;
+      document.getElementById('tm').innerHTML = '加载中...大概还剩'+i+'秒';
+      timer = null;
+      clearTimeout(timer);
+      tim();
+    },1000,false);
+  }
+  tim();
+</script>
 </html>
