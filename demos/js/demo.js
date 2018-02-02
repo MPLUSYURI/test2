@@ -315,7 +315,7 @@ window.onload = function () {
       if(imgx<2000){}
         timeass();
       imgx++;
-    },50);
+    },15);
   }
   document.querySelector('.exc3').onclick =function(){
     sections[Op].style.display = 'block';
