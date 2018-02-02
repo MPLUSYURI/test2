@@ -333,6 +333,6 @@ window.onload = function () {
 
   }
   i5.onclick =function() {
-    window.location.replace(document.referrer);
+    window.location.replace('https://mplusyuri.github.io/test2/demos/');
   }
 }
