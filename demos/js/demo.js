@@ -320,7 +320,7 @@ window.onload = function () {
   document.querySelector('.exc3').onclick =function(){
     sections[Op].style.display = 'block';
     sections[Show].style.display = 'none';
-
+    imgx = 0;
   }
   document.querySelector('.dist3').onclick =function(){
     console.log('7阶段过,进入第0阶段');
