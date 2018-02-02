@@ -320,6 +320,7 @@ window.onload = function () {
   document.querySelector('.exc3').onclick =function(){
     sections[Op].style.display = 'block';
     sections[Show].style.display = 'none';
+    imgy = 0;
     imgx = 0;
   }
   document.querySelector('.dist3').onclick =function(){
