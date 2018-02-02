@@ -250,7 +250,7 @@ window.onload = function () {
     state = Show;
     timeas();
   });
-  var dra = 0;
+  var dra = -2;
   let i1 = document.querySelector('#i1');
   let i2 = document.querySelector('#i2');
   let i3 = document.querySelector('#i3');
