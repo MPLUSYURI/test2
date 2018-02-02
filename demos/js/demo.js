@@ -46,7 +46,7 @@ window.onload = function () {
       clearInterval(timer);
       timer = null;
       (state < 1 ) && (time());
-    },1200);
+    },400);
   }
   time();
   //sec1-p2
