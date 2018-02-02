@@ -129,11 +129,15 @@
   </section>
 </body>
   <script>
-  var i = 15;
+  var iy = 15;
   function tim() {
     var timer = setTimeout(function(){
-      i--;
-      document.getElementById('tm').innerHTML = '加载中...大概还剩'+i+'秒';
+      iy--;
+      if(iy<0){
+         document.getElementById('tm').innerHTML = '马上就好了...';
+      }else{
+        document.getElementById('tm').innerHTML = '加载中...大概还剩'+iy+'秒';
+      }
       timer = null;
       clearTimeout(timer);
       tim();
