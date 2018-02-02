@@ -179,7 +179,7 @@ window.onload = function () {
     if(bodys.b3==true && hairs.h1 == true){
       imgsrc.style.background = 'url(images/p6/31.png) no-repeat';
       imgsrc.style.backgroundSize = '100% auto';
-      sso = 311;
+      sso = 31;
     }
     if(bodys.b3==true && hairs.h2 == true){
       imgsrc.style.background = 'url(images/p6/32.png) no-repeat';
