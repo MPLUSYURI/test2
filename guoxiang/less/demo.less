@@ -1,0 +1,675 @@
+@p1: "../images/p1/";
+@p2: "../images/p2/";
+@p3: "../images/p3/";
+@p4: "../images/p4/";
+@p5: "../images/p5/";
+@p6: "../images/p6/";
+@p7: "../images/p7/";
+@p8: "../images/p8/";
+@p0: "../images/";
+.i{width:100%;height:100%;}
+//loading
+.loading{
+  .i;
+  background-color:red;
+  div{
+    position: relative;
+    left:50%;
+    top:50%;
+    img{
+      position: absolute;
+      top:-200px;
+      left:-100px;
+    }
+  }
+}
+//音乐和logo
+.mbtn{
+  position: absolute;
+  width:45px;
+  height:45px;
+  right:10px;
+  top:20px;
+  background-image: url("../images/m_btn1.png");
+  display: none;
+  //background-image: url("../images/m_btn2.png");
+}
+.logo{
+  position: absolute;
+  width:104px;
+  height:104px;
+  right:10px;
+  bottom:20px;
+  background-image: url("../images/logo.png");
+  opacity: 0;
+}
+//intro
+.intro {
+  .i;
+  background-color:#fff;
+  position: relative;
+  .text1 {
+    width:104px;
+    height:34px;
+    position: absolute;
+    top:300px;
+    left:50%;
+    p {
+      .i;
+      background-image: url("@{p1}p1t1.png");
+      position: absolute;
+      left:-50%;
+    }
+  }
+  .text2 {
+    width:271px;
+    height:35px;
+    position: absolute;
+    top:380px;
+    left:50%;
+    p {
+      .i;
+      background-image: url("@{p1}p1t2.png");
+      position: absolute;
+      left:-50%;
+    }
+  }
+  .btn1 {
+    width:163px;
+    height:56px;
+    position: absolute;
+    top:500px;
+    left:50%;
+    p {
+      .i;
+      background-image: url("@{p1}btn_1.png");
+      position: absolute;
+      left:-50%;
+    }
+  }
+}
+#wrap {
+  .i;
+  display: none;
+  overflow:hidden;
+  #p1 {
+    .i;
+    position: absolute;
+    div {
+      opacity: 0;
+    }
+    .wp1Text1{
+      width:270px;
+      height:31px;
+      position: absolute;
+      top:300px;
+      left:50%;
+      p {
+        .i;
+        background-image: url("@{p2}p2t1.png");
+        position: absolute;
+        left:-50%;
+      }
+    }
+    .wp1Text2{
+      width:321px;
+      height:32px;
+      position: absolute;
+      top:380px;
+      left:50%;
+      p {
+        .i;
+        background-image: url("@{p2}p2t2.png");
+        position: absolute;
+        left:-50%;
+      }
+    }
+    .wp1Text3{
+      width:226px;
+      height:24px;
+      position: absolute;
+      top:460px;
+      left:50%;
+      p {
+        .i;
+        background-image: url("@{p2}p2t3.png");
+        position: absolute;
+        left:-50%;
+      }
+    }
+  }
+  #p2 {
+    .i;
+    position: absolute;
+    //display: none;
+    .wp2T1 {
+      width:122px;
+      height:58px;
+      position: absolute;
+      top:50px;
+      left:50px;
+      background-image: url("../images/p3t1.png");
+      opacity: 0;
+    }
+    .wp2T2 {
+      width:48px;
+      height:399px;
+      position: absolute;
+      top:196px;
+      left:35px;
+      background-image: url("@{p3}p3t2.png");
+      opacity: 0;
+    }
+    .wp2T3 {
+      width:216px;
+      height:480px;
+      position: absolute;
+      top:150px;
+      left:83px;
+      background-image: url("@{p3}p3_01.png");
+      opacity: 0;
+    }
+    .wp2T4 {
+      width:44px;
+      height:43px;
+      position: absolute;
+      top:350px;
+      left:299px;
+      background-image: url("@{p0}less.png");
+      opacity: 0;
+    }
+    .wp2T5 {
+      width:216px;
+      height:480px;
+      position: absolute;
+      top:150px;
+      left:343px;
+      background-image: url("@{p3}p3_02.png");
+      opacity: 0;
+    }
+    .wp2T6 {
+      width:48px;
+      height:402px;
+      position: absolute;
+      top:196px;
+      left:559px;
+      background-image: url("@{p3}p3t3.png");
+      opacity: 0;
+    }
+    .wp2T7 {
+      width:233px;
+      height:36px;
+      position: absolute;
+      top:750px;
+      left:50%;
+      opacity: 0;
+      p {
+        .i;
+        position: absolute;
+        left:-75%;
+        background-image: url("@{p3}p3t4.png");
+      }
+    }
+    .wp2T8 {
+      width:237px;
+      height:37px;
+      position: absolute;
+      top:810px;
+      left:50%;
+      opacity: 0;
+      p {
+        .i;
+        position: absolute;
+        left:-25%;
+        background-image: url("@{p3}p3t5.png");
+      }
+    }
+  }
+  #p3 {
+    .i;
+    position: absolute;
+    //display: none;
+    .wp3T1 {
+      width:122px;
+      height:58px;
+      position: absolute;
+      top:50px;
+      left:50px;
+      background-image: url("../images/p3t1.png");
+      opacity: 0;
+    }
+    .wp3T2 {
+      width:48px;
+      height:333px;
+      position: absolute;
+      top:210px;
+      left:35px;
+      background-image: url("@{p4}p4t2.png");
+      opacity: 0;
+    }
+    .wp3T3 {
+      width:216px;
+      height:480px;
+      position: absolute;
+      top:150px;
+      left:83px;
+      background-image: url("@{p4}p4_01.png");
+      opacity: 0;
+    }
+    .wp3T4 {
+      width:44px;
+      height:43px;
+      position: absolute;
+      top:350px;
+      left:299px;
+      background-image: url("@{p0}less.png");
+      opacity: 0;
+    }
+    .wp3T5 {
+      width:216px;
+      height:480px;
+      position: absolute;
+      top:150px;
+      left:343px;
+      background-image: url("@{p4}p4_02.png");
+      opacity: 0;
+    }
+    .wp3T6 {
+      width:48px;
+      height:333px;
+      position: absolute;
+      top:210px;
+      left:559px;
+      background-image: url("@{p4}p4t3.png");
+      opacity: 0;
+    }
+    .wp3T7 {
+      width:254px;
+      height:37px;
+      position: absolute;
+      top:750px;
+      left:50%;
+      opacity: 0;
+      p {
+        .i;
+        position: absolute;
+        left:-75%;
+        background-image: url("@{p4}p4t4.png");
+      }
+    }
+    .wp3T8 {
+      width:254px;
+      height:37px;
+      position: absolute;
+      top:810px;
+      left:50%;
+      opacity: 0;
+      p {
+        .i;
+        position: absolute;
+        left:-25%;
+        background-image: url("@{p4}p4t5.png");
+      }
+    }
+  }
+  #p4 {
+    .i;
+    position: absolute;
+    //display: none;
+    .wp4T1 {
+      width:122px;
+      height:58px;
+      position: absolute;
+      top:50px;
+      left:50px;
+      background-image: url("../images/p3t1.png");
+      opacity: 0;
+    }
+    .wp4T2 {
+      width:48px;
+      height:397px;
+      position: absolute;
+      top:196px;
+      left:35px;
+      background-image: url("@{p5}p5t2.png");
+      opacity: 0;
+    }
+    .wp4T3 {
+      width:216px;
+      height:480px;
+      position: absolute;
+      top:150px;
+      left:83px;
+      background-image: url("@{p5}p5_01.png");
+      opacity: 0;
+    }
+    .wp4T4 {
+      width:44px;
+      height:43px;
+      position: absolute;
+      top:350px;
+      left:299px;
+      background-image: url("@{p0}less.png");
+      opacity: 0;
+    }
+    .wp4T5 {
+      width:216px;
+      height:480px;
+      position: absolute;
+      top:150px;
+      left:343px;
+      background-image: url("@{p5}p5_02.png");
+      opacity: 0;
+    }
+    .wp4T6 {
+      width:48px;
+      height:421px;
+      position: absolute;
+      top:196px;
+      left:559px;
+      background-image: url("@{p5}p5t3.png");
+      opacity: 0;
+    }
+    .wp4T7 {
+      width:174px;
+      height:36px;
+      position: absolute;
+      top:750px;
+      left:50%;
+      opacity: 0;
+      p {
+        .i;
+        position: absolute;
+        left:-75%;
+        background-image: url("@{p5}p5t4.png");
+      }
+    }
+    .wp4T8 {
+      width:143px;
+      height:37px;
+      position: absolute;
+      top:810px;
+      left:50%;
+      opacity: 0;
+      p {
+        .i;
+        position: absolute;
+        left:-25%;
+        background-image: url("@{p5}p5t5.png");
+      }
+    }
+  }
+  #p5 {
+    .i;
+    position: absolute;
+    //display: none;
+    .wp5T1 {
+      width:122px;
+      height:58px;
+      position: absolute;
+      top:50px;
+      left:50px;
+      background-image: url("../images/p3t1.png");
+      opacity: 0;
+    }
+    .wp5T2 {
+      width:48px;
+      height:378px;
+      position: absolute;
+      top:196px;
+      left:35px;
+      background-image: url("@{p6}p6t2.png");
+      opacity: 0;
+    }
+    .wp5T3 {
+      width:216px;
+      height:480px;
+      position: absolute;
+      top:150px;
+      left:83px;
+      background-image: url("@{p6}p6_01.png");
+      opacity: 0;
+    }
+    .wp5T4 {
+      width:44px;
+      height:43px;
+      position: absolute;
+      top:350px;
+      left:299px;
+      background-image: url("@{p0}less.png");
+      opacity: 0;
+    }
+    .wp5T5 {
+      width:216px;
+      height:480px;
+      position: absolute;
+      top:150px;
+      left:343px;
+      background-image: url("@{p6}p6_02.png");
+      opacity: 0;
+    }
+    .wp5T6 {
+      width:48px;
+      height:378px;
+      position: absolute;
+      top:196px;
+      left:559px;
+      background-image: url("@{p6}p6t3.png");
+      opacity: 0;
+    }
+    .wp5T7 {
+      width:180px;
+      height:36px;
+      position: absolute;
+      top:750px;
+      left:50%;
+      opacity: 0;
+      p {
+        .i;
+        position: absolute;
+        left:-75%;
+        background-image: url("@{p6}p6t4.png");
+      }
+    }
+    .wp5T8 {
+      width:180px;
+      height:37px;
+      position: absolute;
+      top:810px;
+      left:50%;
+      opacity: 0;
+      p {
+        .i;
+        position: absolute;
+        left:-25%;
+        background-image: url("@{p6}p6t5.png");
+      }
+    }
+  }
+  #p6 {
+    .i;
+    position: absolute;
+    //display: none;
+    .wp6T1 {
+      width:122px;
+      height:58px;
+      position: absolute;
+      top:50px;
+      left:50px;
+      background-image: url("../images/p3t1.png");
+      opacity: 0;
+    }
+    .wp6T2 {
+      width:48px;
+      height:371px;
+      position: absolute;
+      top:196px;
+      left:35px;
+      background-image: url("@{p7}p7t2.png");
+      opacity: 0;
+    }
+    .wp6T3 {
+      width:256px;
+      height:506px;
+      position: absolute;
+      top:150px;
+      left:83px;
+      background-image: url("@{p7}p7_01.png");
+      opacity: 0;
+      z-index: -10;
+    }
+    .wp6T4 {
+      width:44px;
+      height:43px;
+      position: absolute;
+      top:350px;
+      left:299px;
+      background-image: url("@{p0}less.png");
+      opacity: 0;
+    }
+    .wp6T5 {
+      width:299px;
+      height:472px;
+      z-index: -10;
+      position: absolute;
+      top:150px;
+      left:300px;
+      background-image: url("@{p7}p7_02.png");
+      opacity: 0;
+    }
+    .wp6T6 {
+      width:48px;
+      height:441px;
+      position: absolute;
+      top:196px;
+      left:559px;
+      background-image: url("@{p7}p7t3.png");
+      opacity: 0;
+    }
+    .wp6T7 {
+      width:141px;
+      height:36px;
+      position: absolute;
+      top:750px;
+      left:50%;
+      opacity: 0;
+      p {
+        .i;
+        position: absolute;
+        left:-75%;
+        background-image: url("@{p7}p7t4.png");
+      }
+    }
+    .wp6T8 {
+      width:100px;
+      height:37px;
+      position: absolute;
+      top:810px;
+      left:50%;
+      opacity: 0;
+      p {
+        .i;
+        position: absolute;
+        left:-25%;
+        background-image: url("@{p7}p7t5.png");
+      }
+    }
+  }
+  #p8 {
+    .i;
+    position: absolute;
+    .text01{
+      width:240px;
+      height:32px;
+      position: absolute;
+      top:300px;
+      left:50%;
+      opacity: 0;
+      p{
+        .i;
+        position: absolute;
+        left:-50%;
+        background-image: url("@{p8}p8t1.png");
+        background-size:99%;
+      }
+    }
+    .text02{
+      width:337px;
+      height:32px;
+      position: absolute;
+      top:380px;
+      left:50%;
+      opacity: 0;
+      p{
+        .i;
+        position: absolute;
+        left:-50%;
+        background-image: url("@{p8}p8t2.png");
+        background-size:99%;
+      }
+    }
+    .text03{
+      width:470px;
+      height:28px;
+      position: absolute;
+      top:600px;
+      left:50%;
+      opacity: 0;
+      p{
+        .i;
+        position: absolute;
+        left:-50%;
+        background-image: url("@{p8}share_btn.png");
+      }
+    }
+    .text04{
+      width:214px;
+      height:121px;
+      position: absolute;
+      bottom:34px;
+      left:50%;
+      opacity: 0;
+      p{
+        .i;
+        position: absolute;
+        left:-50%;
+        background-image: url("@{p8}blogo.png");
+      }
+    }
+  }
+}
+.arrow {
+  width:26px;
+  height:27px;
+  position: absolute;
+  bottom:50px;
+  left:50%;
+  display: none;
+  animation: arrow 1s linear infinite;
+  p {
+    .i;
+    background-image: url("../images/arrow.png");
+    position: absolute;
+    left:-50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
