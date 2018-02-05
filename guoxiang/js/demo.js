@@ -195,7 +195,7 @@ function disappear() {
   var timer = setTimeout(function () {
     $('.intro')[0].style.animation = '';
     $('.intro')[0].style.display = 'none';
-    // $('.logo')[0].style.animation = 'tras2 0.25s linear forwards';
+    $('.logo')[0].style.animation = 'tras2 0.25s linear forwards';
     $('#wrap')[0].style.display = 'block';
     time1();
     clearTimeout(timer);
