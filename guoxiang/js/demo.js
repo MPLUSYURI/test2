@@ -5,7 +5,7 @@ var s = 1,iu =0,io = 0;
 var drawNum = 0;
 window.onload = function () {
   var loadingTime = {
-    time:20//设置加载时间
+    time:12//设置加载时间
   };
   function loadTime() {
     var time = setTimeout(function () {
@@ -22,7 +22,7 @@ window.onload = function () {
         $('.mbtn')[0].style.display = 'block';
         state = p1;
       }
-    }, 100);
+    }, 1000);
   }
   loadTime();
   //开始
