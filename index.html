@@ -1,74 +1,48 @@
-<!doctype html>
-<html lang="zh-cn">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>我是分享的抬头2</title>
+	<meta charset="UTF-8">
+	<title>Document</title>
 </head>
-<body><div style="display:none"><img src="https://www.huceo.com/zb_users/upload/IMG/tianapi-ad.png"/></div>
-<script src="http://libs.useso.com/js/jquery/1.10.2/jquery.min.js"></script>    
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>      
-<script>    
-url=encodeURIComponent(location.href.split('#')[0]);    
-$.ajax({    
-type : "get",    
-url : "http://game.huceo.com/jssdk/jssdk_txapi.php?url="+url,    
-dataType : "jsonp",    
-jsonp: "callback",    
-jsonpCallback:"success_jsonpCallback",    
-success : function(data){    
-wx.config({    
-appId: data.appId,    
-timestamp: data.timestamp,    
-nonceStr: data.nonceStr,    
-signature: data.signature,    
-jsApiList: [    
-"onMenuShareTimeline",    
-"onMenuShareAppMessage"    
-]    
-});    
-},    
-error:function(data){    
-alert("g.huceo.com-no!");    
-}    
-});    
-wx.ready(function () {    
-    wx.onMenuShareTimeline({    //HTML5游戏中已有自定义分享函数请省略 
-title: '微信朋友圈上最好玩的手机小游戏', // 分享标题    
-link: 'http://g.huceo.com/weixin/zhili/', // 分享链接    
-imgUrl: 'http://g.huceo.com/img/kuaipao.png', // 分享图标    
-success: function () {    
-// 用户确认分享后执行的回调函数    
-        window.location = "http://mp.weixin.qq.com/s?__biz=MzA4Njg1MjkzOA==&mid=200770039&idx=1&sn=a97ee832189c4b1d5eb9947f7e74e7ad#rd";    
-},    
-cancel: function () {    
-// 用户取消分享后执行的回调函数    
-        window.location = "http://mp.weixin.qq.com/s?__biz=MzA4Njg1MjkzOA==&mid=200770039&idx=1&sn=a97ee832189c4b1d5eb9947f7e74e7ad#rd";    
-}    
-});    
-wx.onMenuShareAppMessage({    //HTML5游戏中已有自定义分享函数请省略 
-title: '微信朋友圈上最好玩的手机小游戏', // 分享标题    
-desc: '微信朋友圈上最好玩的手机小游戏大全，无需下载，即点即玩！', // 分享描述    
-link: 'http://g.huceo.com/weixin/zhili/', // 分享链接    
-imgUrl: 'http://g.huceo.com/img/kuaipao.png', // 分享图标    
-type: '', // 分享类型,music、video或link，不填默认为link    
-dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空    
-success: function () {    
-// 用户确认分享后执行的回调函数    
-        window.location = "http://mp.weixin.qq.com/s?__biz=MzA4Njg1MjkzOA==&mid=200770039&idx=1&sn=a97ee832189c4b1d5eb9947f7e74e7ad#rd";    
-},    
-cancel: function () {    
-// 用户取消分享后执行的回调函数    
-        window.location = "http://mp.weixin.qq.com/s?__biz=MzA4Njg1MjkzOA==&mid=200770039&idx=1&sn=a97ee832189c4b1d5eb9947f7e74e7ad#rd";    
-}    
-});    
-}); 
-     
-wx.error(function (res) {    
-alert(res.errMsg);    
-});    
-</script> 
+<body>
+	<div class="bdsharebuttonbox" data-tag="share_1">
+	<a class="bds_mshare" data-cmd="mshare"></a>
+	<a class="bds_qzone" data-cmd="qzone" href="#"></a>
+	<a class="bds_tsina" data-cmd="tsina"></a>
+	<a class="bds_baidu" data-cmd="baidu"></a>
+	<a class="bds_renren" data-cmd="renren"></a>
+	<a class="bds_tqq" data-cmd="tqq"></a>
+	<a class="bds_more" data-cmd="more">更多</a>
+	<a class="bds_count" data-cmd="count"></a>
+</div>
+<script>
+	window._bd_share_config = {
+		common : {
+			bdText : '自定义分享内容',	
+			bdDesc : '自定义分享摘要',	
+			bdUrl : 'http://share.baidu.com/static/web/img/imagesharepreview.jpg?v=fc1dee9c.jpg', 	
+			bdPic : 'http://share.baidu.com/static/web/img/imagesharepreview.jpg?v=fc1dee9c.jpg'
+		},
+		share : [{
+			"bdSize" : 16
+		}],
+		slide : [{	   
+			bdImg : 0,
+			bdPos : "right",
+			bdTop : 100
+		}],
+		image : [{
+			viewType : 'list',
+			viewPos : 'top',
+			viewColor : 'black',
+			viewSize : '16',
+			viewList : ['qzone','tsina','huaban','tqq','renren']
+		}],
+		selectShare : [{
+			"bdselectMiniList" : ['qzone','tqq','kaixin001','bdxc','tqf']
+		}]
+	}
+	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
 </body>
 </html>
