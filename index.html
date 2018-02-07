@@ -2,36 +2,37 @@
 <html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
-	<title>2Document</title>
+	<meta name="sharecontent" data-msg-img="http://www.mafutian.net/logo.jpg" data-msg-title="你的标题1" data-msg-content="你的简介1" data-msg-callBack="" data-line-img="http://www.mafutian.net/logo.jpg" data-line-title="你的标题2" data-line-callBack="j2"/>
+	<title>Document</title>
 </head>
 <body>
 	
 </body>
 <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
-	wx.config({
-		debug: false,
-		appId: 'wxfb95e4025a5d4614',
-		timestamp: '1498633007',
-		nonceStr: 'tnZJBsdrUo88MFiB',
-		signature: 'cae67a0a883822e1087cba091321b14b73152210',
-		jsApiList: [
-			'onMenuShareTimeline',
-			'onMenuShareAppMessage'
-		  ]
-	});
-	wx.ready(function () {
-		var shareData = {
-			title: '抬头、抬头、抬头、抬头、抬头',	//	标题
-			desc: '描述、描述、描述、描述、描述、描述、描述、描述、描述、描述',	//	描述
-			link: 'https://mplusyuri.github.io/test2/',	//	分享的URL，必须和当前打开的网页的URL是一样的
-			imgUrl: 'http://www.mafutian.net/logo.jpg'	//	缩略图地址
-		};
-		wx.onMenuShareAppMessage(shareData);
-		wx.onMenuShareTimeline(shareData);
-	});
-	wx.error(function (res) {
-	  //alert(res.errMsg);//错误提示
-	});
+	// wx.config({
+	// 	debug: false,
+	// 	appId: 'wxfb95e4025a5d4614',
+	// 	timestamp: '1498633007',
+	// 	nonceStr: 'tnZJBsdrUo88MFiB',
+	// 	signature: 'cae67a0a883822e1087cba091321b14b73152210',
+	// 	jsApiList: [
+	// 		'onMenuShareTimeline',
+	// 		'onMenuShareAppMessage'
+	// 	  ]
+	// });
+	// wx.ready(function () {
+	// 	var shareData = {
+	// 		title: '抬头、抬头、抬头、抬头、抬头',	//	标题
+	// 		desc: '描述、描述、描述、描述、描述、描述、描述、描述、描述、描述',	//	描述
+	// 		link: 'http://www.mafutian.net/',	//	分享的URL，必须和当前打开的网页的URL是一样的
+	// 		imgUrl: 'http://www.mafutian.net/logo.jpg'	//	缩略图地址
+	// 	};
+	// 	wx.onMenuShareAppMessage(shareData);
+	// 	wx.onMenuShareTimeline(shareData);
+	// });
+	// wx.error(function (res) {
+	//   //alert(res.errMsg);//错误提示
+	// });
 </script>
 </html>
