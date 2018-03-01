@@ -1,10 +1,10 @@
 window.onload = function () {
   let sections = $('section');
-  for(let i=0;i<sections.length;i++){
-    sections[i].style.width = "640px";
-    sections[i].style.height = "1008px";
-    sections[i].style.position = "absolute";
-  }
+  // for(let i=0;i<sections.length;i++){
+  //   sections[i].style.width = "640px";
+  //   sections[i].style.height = "1008px";
+  //   sections[i].style.position = "absolute";
+  // }
   let secs = {
     sec1:sections[0],
     sec2:sections[1]

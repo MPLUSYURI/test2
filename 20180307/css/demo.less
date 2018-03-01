@@ -1,8 +1,17 @@
 @imgs: "../images/";
 #demo {
+  -moz-user-select:none;
+  -khtml-user-select:none;
+  user-select:none;
   font-family: 微软雅黑;
   overflow: hidden;
+  .all{
+    width:640px;
+    height:1008px;
+    position: absolute;
+  }
   #home {
+    .all;
     z-index:70;
     background-image:url("@{imgs}/bg.jpg");
     .arrowLeft{
@@ -53,6 +62,7 @@
     }
   }
   #rule {
+    .all;
     background-image:url("@{imgs}/bg.jpg");
     z-index:60;
     .ruleText {
@@ -103,15 +113,19 @@
     }
   }
   #answer {
+    .all;
     z-index:50;
   }
   #announced {
+    .all;
     z-index:40;
   }
   #retainFunds {
+    .all;
     z-index:30;
   }
   #end {
+    .all;
     z-index:20;
   }
 }
