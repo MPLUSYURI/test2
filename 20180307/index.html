@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="玛格315互动" />
+  <meta name="keywords" content="玛格315,315,抽奖,代金券,玛格315互动,答题,家具,家居" />
+  <meta name="author" content="maple" />
+  <!--设置可见区域为640,不予许用户缩放-->
+  <meta name="viewport" content="width=640,user-scalable=no">
+  <!--<meta name="format-detection" content="telephone=no">-->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet/less" href="css/demo.less" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/fu.js"></script>
+  <script src="js/less.js"></script>
+  <title>“玛”上有钱，智取百万豪礼</title>
+</head>
+<body style="width:640px;height:1008px;color:#fff;">
+<div style="width:640px;height:1008px;" id="demo">
+  <!--<section id="load">-->
+  <!--loading-->
+  <!--</section>-->
+  <section id="home" style="display: block;">
+    <div class="arrowLeft"></div>
+    <div class="arrowRight"></div>
+    <div class="standard">
+      <div class="text"></div>
+    </div>
+    <div id="igo">我要挑战</div>
+    home
+  </section>
+  <!--规则-->
+  <section id="rule">
+    <div class="ruleText">
+    </div>
+    <div id="go">Ready？Go！</div>
+    <div class="curtain">
+      <span id="num">
+        <i id="countdown" class="num3"></i>
+      </span>
+    </div>
+    rule
+  </section>
+  <!--答题-->
+  <section id="answer">
+    <br><br>
+    da
+    <!--错误提示-->
+  </section>
+  <!--公布-->
+  <section id="announced">
+    <br><br><br><br>
+    announced
+  </section>
+  <!--留资-->
+  <section id="retainFunds">
+    <br><br><br><br><br>
+    retainFunds
+  </section>
+  <section id="end">
+    <br><br><br><br><br><br>
+    end
+  </section>
+</div>
+</body>
+<script type="text/javascript">
+  var ua = navigator.userAgent.toLowerCase();
+  var isWeixin = ua.indexOf('micromessenger') != -1;
+  var isAndroid = ua.indexOf('android') != -1;
+  var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
+  if (!!isWeixin) {
+    document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
+    document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
+  }else {
+    //如在微信中打开，就引入demo.js文件
+    document.write("<script src='js/demo.js'><\/script>");
+  }
+</script>
+</html>

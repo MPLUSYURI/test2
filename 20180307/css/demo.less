@@ -1,0 +1,117 @@
+@imgs: "../images/";
+#demo {
+  font-family: 微软雅黑;
+  overflow: hidden;
+  #home {
+    z-index:70;
+    background-image:url("@{imgs}/bg.jpg");
+    .arrowLeft{
+      width:56px;
+      height:87px;
+      position: absolute;
+      background-image: url("@{imgs}/home/yuansu2.png");
+      top:640px;
+      left:279px;
+    }
+    .arrowRight{
+      width:56px;
+      height:87px;
+      position: absolute;
+      background-image: url("@{imgs}/home/yuansu1.png");
+      top:594px;
+      left:77px;
+    }
+    .standard {
+      width:546px;
+      height:471px;
+      background-image: url("@{imgs}/home/standard1.png");
+      position: absolute;
+      top:200px;
+      left:48px;
+      .text {
+        width:478px;
+        height:198px;
+        position: absolute;
+        top:144px;
+        left:35px;
+        background-image: url("@{imgs}/home/text.png");
+        animation:text 0.3s linear infinite alternate;
+      }
+    }
+    #igo {
+      width:286px;
+      height:82px;
+      position: absolute;
+      top:774px;
+      left:176px;
+      background-image: url("@{imgs}/maniu.png");
+      font-size:36px;
+      color:#b8f6fd;
+      text-shadow: 0 0 25px #0084ff;
+      text-align: center;
+      line-height: 77px;
+    }
+  }
+  #rule {
+    background-image:url("@{imgs}/bg.jpg");
+    z-index:60;
+    .ruleText {
+      width:542px;
+      height:578px;
+      position: absolute;
+      top:238px;
+      left:49px;
+      background-image:url("@{imgs}/rule/ruletext.png");
+    }
+    #go {
+      width:286px;
+      height:82px;
+      position: absolute;
+      top:774px;
+      left:177px;
+      background-image: url("@{imgs}/maniu.png");
+      font-size:34px;
+      color:#b8f6fd;
+      text-shadow: 0 0 30px #0084ff;
+      text-align: center;
+      line-height: 77px;
+    }
+    .curtain{
+      display: none;
+      width:640px;
+      height:1008px;
+      background-color:rgba(0,0,0,0.8);
+      position:absolute;
+      #num{
+        display: block;
+        width:347px;
+        height:337px;
+        position:absolute;
+        top:336px;
+        left:146px;
+        background-image:url("@{imgs}/rule/s.png");
+        #countdown{
+          display: block;
+          width:347px;
+          height:337px;
+        }
+        .num3{background-image:url("@{imgs}/rule/3.png");}
+        .num2{background-image:url("@{imgs}/rule/2.png");}
+        .num1{background-image:url("@{imgs}/rule/1.png");}
+      }
+
+    }
+  }
+  #answer {
+    z-index:50;
+  }
+  #announced {
+    z-index:40;
+  }
+  #retainFunds {
+    z-index:30;
+  }
+  #end {
+    z-index:20;
+  }
+}
