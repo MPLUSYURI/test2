@@ -31,7 +31,7 @@
     home
   </section>
   <!--规则-->
-  <section id="rule">
+  <section id="rule" style="display: none;">
     <div class="ruleText">
     </div>
     <div id="go">Ready？Go！</div>
@@ -43,22 +43,47 @@
     rule
   </section>
   <!--答题-->
-  <section id="answer">
-    <br><br>
+  <section id="answer" style="display: none";>
+    <div class="test">
+      <div id="ban">&nbsp;01</div>
+    </div>
+    <!--题目-->
+    <div class="topic">
+      <div class="topicText">板材家具，会变成“短命家居”吗？</div>
+      <div class="select">
+        <span class="sect">A、会</span>
+        <span>B、不会</span>
+      </div>
+    </div>
+    <!--按钮-->
+    <div id="btn">下一题</div>
+    <div class="noBg" style="display: none;">
+      <div class="prompt">
+        <div class="off1"></div>
+        <div class="correct">
+          <span class="big">A</span>
+          <span class="small">&nbsp;:&nbsp;会</span>
+        </div>
+        <div class="text">最近几年国家发力淘汰落后产能，板材行业技术升级，让板材的质量和使用寿命都上一个全新的台阶。</div>
+        <div class="btn">
+          <span id="receive">领取代金券</span>
+        </div>
+      </div>
+    </div>
     da
     <!--错误提示-->
   </section>
   <!--公布-->
-  <section id="announced">
+  <section id="announced" style="display: none;">
     <br><br><br><br>
     announced
   </section>
   <!--留资-->
-  <section id="retainFunds">
+  <section id="retainFunds" style="display: none;">
     <br><br><br><br><br>
     retainFunds
   </section>
-  <section id="end">
+  <section id="end" style="display: none;">
     <br><br><br><br><br><br>
     end
   </section>
@@ -70,12 +95,11 @@
   var isAndroid = ua.indexOf('android') != -1;
   var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
   if (!!isWeixin) {
-    //document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
-    //document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
+    document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/open/libs/weui/0.4.1/weui.css">';
+    document.body.innerHTML = '<div class="weui_msg"><div class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></div><div class="weui_text_area"><h4 class="weui_msg_title">请在微信客户端打开链接</h4></div></div>';
   }else {
     //如在微信中打开，就引入demo.js文件
-    //document.write("");
+    document.write("<script src='js/demo.js'><\/script>");
   }
 </script>
-  <script src='js/demo.js'><\/script>
 </html>

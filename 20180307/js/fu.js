@@ -28,7 +28,8 @@ function goTime(s,obj){
       obj.css('animation','');
       countdown.attr('class','num3');
       countdown.css('animation','');
-      console.log('用户开始答题');
+      console.log('还原上两页,用户开始答题---答题页显示--------->');
+      $('#answer').css('display','block');
     }
   },1000);
 }

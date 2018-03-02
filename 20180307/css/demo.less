@@ -1,10 +1,18 @@
 @imgs: "../images/";
+#ban{
+  width:100%;
+  height:100%;
+  position:relative;
+  left:-50%;
+  text-align: center;
+}
 #demo {
   -moz-user-select:none;
   -khtml-user-select:none;
   user-select:none;
   font-family: 微软雅黑;
   overflow: hidden;
+  background-image:url("@{imgs}/bg.jpg");
   .all{
     width:640px;
     height:1008px;
@@ -112,9 +120,131 @@
 
     }
   }
+  //题目-----------------------------------------------------------------
   #answer {
     .all;
     z-index:50;
+    background-image:url("@{imgs}/bg.jpg");
+    position: relative;
+    .test {
+      width:163px;
+      height:84px;
+      position: absolute;
+      top:226.9px;
+      left:50%;
+      #ban{
+        background-image:url("@{imgs}/line.png");
+        color:#00ffff;
+        font-size:58px;
+        font-style:oblique;
+        line-height: 84px;
+      }
+    }
+    .topic {
+      width:510px;
+      height:531px;
+      position:absolute;
+      top:311px;
+      left:65px;
+      padding-top:35px;
+      .topicText{
+        font-size:30px;
+        font-weight: bold;
+        line-height: 46px;
+        color:#00FFFF;
+        padding-bottom:26px;
+      }
+      .select {
+        width:294px;
+        margin:0 auto;
+        span{
+          width:211px;
+          height:58px;
+          display:block;
+          margin-bottom:31px;
+          background-image:url("@{imgs}/border.png");
+          padding-left:83px;
+          font-size:28px;
+          color:#00ffff;
+          line-height: 58px;
+        }
+        span.sect{
+          color:#fff;
+          background-image:url("@{imgs}/fell.png");
+        }
+      }
+    }
+    #btn {
+      width:286px;
+      height:82px;
+      position: absolute;
+      top:774px;
+      left:177px;
+      background-image: url("@{imgs}/maniu.png");
+      font-size:38px;
+      color:#b8f6fd;
+      text-shadow: 0 0 25px #0084ff;
+      text-align: center;
+      line-height: 77px;
+    }
+    .noBg {
+      width:640px;
+      height:1008px;
+      background-color:rgba(0,0,0,0.8);
+      position: absolute;
+      .prompt{
+        width:407px;
+        height:493px;
+        position: absolute;
+        top:254px;
+        left:91px;
+        background-image: url("@{imgs}/prompt.png");
+        padding:0px 0 81px 57px;
+        .off1 {
+          width:36px;
+          height:86px;
+          float:right;
+        }
+        //需要改样式的地方
+        .correct {
+          width:407px;
+          height:76px;
+          padding-top:86px;
+          color:#fff;
+          .big{
+            font-size:52px;
+          }
+          .small{
+            font-size:32px;
+          }
+        }
+        .text{
+          padding-top:82px;
+          padding-right:79px;
+          width:328px;
+          height:164px;
+          font-size:18px;
+          line-height: 37px;
+        }
+        .btn{
+          width:407px;
+          height:81px;
+          position: relative;
+          #receive {
+            width:286px;
+            height:82px;
+            position: absolute;
+            left:30px;
+            background-image: url("@{imgs}/maniu.png");
+            font-size:38px;
+            color:#b8f6fd;
+            text-shadow: 0 0 25px #0084ff;
+            text-align: center;
+            line-height: 77px;
+          }
+        }
+      }
+    }
   }
   #announced {
     .all;
